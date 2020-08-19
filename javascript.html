@@ -1,0 +1,225 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Our First Javascript</title>
+  
+    <style>
+        .grid-container{
+            background-color: white;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 30% 40% auto;
+            grid-template-rows: 10% auto 10%;
+        }
+        
+        .header, .menu, .main, .right, .footer{
+            border: 2px solid blue;
+            text-align: center;
+        }
+        
+        .header{
+            background-color: lightblue;
+            grid-column: 1 / 4;
+        }
+        
+        .menu {
+            
+            background-color: lightblue;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            display:grid;
+            align-items: center;
+          
+            
+        }
+        
+        .main {
+            background-color: lightblue;
+            grid-column: 2 / 3;
+           
+        }
+        
+        .right{
+            
+            background-color: lightblue;
+            grid-column: 3 / 4;
+             
+        }
+        .footer {
+            
+            background-color: lightblue;
+            grid-column: 2 / 4;
+        } 
+        
+        #myspan {
+            cursor:grab;
+            width: 40%;
+            height: 40px;
+            background-color: red;
+            transition: background-color 3s, height 1s, font-size 2s, width 1s, margin-left 1s; 
+        }
+        
+        #myspan:hover {
+            background-color: green;
+            height: 20px;
+            font-size: 40px;
+            width: 60%;
+            margin-left: 40px;
+        }
+        
+        #resultdiv {
+            height: 150px;
+            width: 100%;
+            background-color: orange;
+            margin-top: 30px;
+            line-height: 150px;
+            color: white;
+            word-wrap: break-word;
+        }
+        
+        
+        
+    </style>
+    
+    
+    
+</head>
+    
+    
+<body>
+    <span></span>
+   <div class="grid-container">
+        <div class="header" id="header">
+            Header
+       </div>
+        <div class="menu">
+            <span id="myspan">Menu</span>
+       </div>
+        <div class="main" id="main">
+            <img src="images/bulboff.PNG" id="image" />
+            <button id="switchbutton">turn on</button>
+       </div>
+       <div class="right">
+            <input type="password" placeholder="Enter password" id="password"/>
+            <button id="showbutton">show</button>
+           
+           <div id="resultdiv">
+                Result
+           </div>
+           <textarea maxlength="30" id="mytextarea" cols="40" rows="10"></textarea>
+           
+       </div>
+        <div class="footer">
+            <p id="myp" style="background-color: green">This is a paragraph</p>
+            Footer
+       </div>
+      
+    </div>
+    
+
+   
+    <script src="js/script.js">    
+    </script>
+    
+    <script>
+        
+        var name = "Computer".length;
+        alert(name);
+       
+        //Events:
+        //click
+        //hover -> mouseover mouseout
+       
+        //control structures - if, else, for and while loop.
+        //functions
+        //random numbers
+        
+       //get the textarea and add the right event to it
+        document.getElementById("mytextarea").onkeyup = function (){
+            //get the text of the textarea
+            var collectedtext = this.value;
+            
+            //show it on the screen
+            document.getElementById("resultdiv").innerText = collectedtext.length;
+        }
+        
+        
+        
+      
+    </script>
+    
+    <script>
+        
+        /*
+        var x = 5;  //x is an integer
+        var name = "Omobowale"; //name is a string
+        var name2 = 'Adebisi';    //name2 is a string
+        var y = 34.5;  //y is a floating point number
+        var password = "ftukjh@dfakdj^@3"  //password is a string
+        var score = "45.67"; //score here is a string
+        var AYODeji = 'YOu asked a question';
+        var valid = false;   //valid is a boolean
+        var grade = "A"; //Grade is a character
+        
+        alert("My name is " + name);   //+ concatenation 
+        alert(x + " " + y); //What will this give us: 5 34.5
+        
+        
+        //select the button and add a click event to it
+        document.getElementById("addbutton").onclick = function(){
+            //get the first number from the input
+            var firstnumber = document.getElementById("fnum").value;
+            //convert from string to integer
+            var x = parseInt(firstnumber);
+            
+            //get the second number from the second input
+            var secondnumber = document.getElementById("snum").value;
+            //convert to integer
+            var y = parseInt(secondnumber);
+            
+            //add the two numbers together
+            var sum = x + y;
+            
+            //display the result
+            document.getElementById("resultdiv").innerText = sum;
+            
+            
+        }
+        
+       
+        
+        
+         document.getElementById("multiplybutton").onclick = function(){
+            
+            //get the first number
+            var fnum = document.getElementById("fnum").value;
+            //use parseInt to convert to an integer
+            var x = parseInt(fnum);
+            
+            //get the second number
+            var snum = document.getElementById("snum").value;
+            //use parseInt to convert to an integer
+            var y = parseInt(snum);
+            
+            //multiply the two numbers
+            var total = x / y;
+            
+            //show the result on the screen
+            document.getElementById("resultdiv").innerText = total;
+            
+        }
+        
+        */ 
+        
+        
+    </script>
+    
+</body>
+
+    
+    
+</html>
+
+

@@ -1,0 +1,59 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Learning Arrays</title>
+  
+    
+    
+    
+</head>
+    
+    
+<body>
+    
+   <textarea rows="6" cols="40" id="mytext"></textarea>
+    <button id="showbutton">Show Quote</button>
+    
+    
+   <script>
+       
+       //An array is a collection of items or data
+       
+    var name = "Omobowale";
+    var names = ["Omobowale", "Abdulwahab", "Afeez", "Areago",  "Blessing", "Daniel", "Ganiya"];
+    var ages = [90, 50, 45, 34];
+    var quotes = ["Eat well and live long", "Laughter is the best medicine", "Roses are red", "Health is wealth", "The sky is the limit", "What an elder can see sitting, a child cannot see it standing", "A stitch in time saves nine", "Live like everyday is the last", "Not all that glitters is gold", "You only live once"];
+       
+    //document.write(names[5]);
+    //document.write(ages[2]);
+       
+    //1. Arrays are indexed from zero
+    //2. functions in array
+    //document.write(names.length);
+    document.write(ages.length * names.length * 4);  //4 * 7 * 4 = 28 * 4 = 112
+       
+    //if the length of an array is 20, what is index of the last element?
+    //if the index of the last element of an array is 39, what is the length of the array?
+       
+       
+    document.getElementById("showbutton").onclick = function(){
+        //generate a random number //
+        var x = Math.floor(Math.random() * quotes.length); // 0-9
+        
+        document.getElementById("mytext").value = quotes[x];
+        
+    }
+    
+    
+    
+       
+    </script>
+</body>
+
+    
+    
+</html>
+
+

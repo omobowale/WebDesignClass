@@ -1,0 +1,102 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Control Structure</title>
+  
+    
+    
+    
+</head>
+    
+    
+<body>
+    
+    <div>
+        <input id="ageinput" type="number" placeholder="Please enter your age" />
+        <button id="checkbutton">check</button>
+    
+        <br>
+        
+        <div style="margin-top: 90px">
+            <p id="message" style="padding:0; margin:0"></p>
+            <input id="passwordinput" type="text" placeholder="Please enter your password" />
+            <button id="loginbutton">Login</button>
+        </div>
+    </div>
+    
+    
+    
+   
+    
+    <script>
+    
+        var password = "letmein";
+        
+        document.getElementById("loginbutton").onclick = function (){
+            //get the user input
+            var userPassword = document.getElementById("passwordinput").value;
+            
+            //check if the user's input is the same as our password
+
+            
+           /* if(userPassword == ""){
+                 document.getElementById("message").innerText = "Password field is empty";
+                document.getElementById("message").style.color = "red";
+            }
+            
+            else if(userPassword == password) {
+                document.getElementById("message").innerText = "You are a member";
+                document.getElementById("message").style.color = "green";
+            }
+            
+            else {
+                document.getElementById("message").innerText = "You are not a member";
+                document.getElementById("message").style.color = "red";
+            }*/
+            
+            if(userPassword.length < 8){
+                document.getElementById("message").innerText = "Weak Password";
+                document.getElementById("message").style.color = "red";
+            }
+            
+            else {
+                document.getElementById("message").innerText = "Strong Password";
+                document.getElementById("message").style.color = "green";
+                
+                if(userPassword == ""){
+                     document.getElementById("message").innerText = "Password field is empty";
+                    document.getElementById("message").style.color = "red";
+                }
+
+                else if(userPassword == password) {
+                    document.getElementById("message").innerText = "You are a member";
+                    document.getElementById("message").style.color = "green";
+                }
+
+                else {
+                    document.getElementById("message").innerText = "You are not a member";
+                    document.getElementById("message").style.color = "red";
+                }
+
+            }
+            
+        }
+        
+        
+        
+        
+      
+        
+        
+       
+    </script>
+    
+</body>
+
+    
+    
+</html>
+
+

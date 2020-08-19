@@ -1,0 +1,56 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Set Interval</title>
+  
+    
+    
+    
+</head>
+    
+    
+<body>
+    <p>Number: <span id="number">60</span></p>
+  
+    
+    
+    
+    <script>
+    
+      /*  var num = 60;
+        var mytimer = setInterval(function(){
+            
+            //num 60
+            //num 60
+            //num 59
+            document.getElementById("number").innerText = --num; //59//  pre-decrement, post-decrement
+            
+            if(num == 50){
+                //clear the interval
+                clearInterval(mytimer);
+            }
+            
+            
+        }, 1000);  */
+        
+        var num = 0;
+        //document.write(++num); //1
+        //document.write(num); //1
+        
+        var x = 6;
+        //document.write(x++ + x);  //6 + 7 = 13
+        //document.write(++x + x--);  //7 + 7 = 14
+        document.write(x++ + ++x - ++x * x--); // 6 + 8 - 9 * 9 = 14 - 81 = -67 
+        
+        
+       
+    </script>
+</body>
+
+    
+    
+</html>
+
+

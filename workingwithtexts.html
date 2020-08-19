@@ -1,0 +1,69 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Positioning</title>
+    <style>
+        #firstdiv{
+            background-color: blue;
+            width: 400px;
+            height: 100px;
+        }
+        
+        #seconddiv{
+            background-color: green;
+            width: 400px;
+            height: 100px;
+            position:absolute;
+            top: 0;
+            left: 60px;
+            
+        }
+        
+        #thirddiv{
+            background-color: purple;
+            width: 400px;
+            height: 100px;
+            margin-top: 20px;
+        }
+        
+        #container{
+            background-color: yellow;
+            width:800px;
+            height:200px;
+            position: relative;
+        }
+        
+        #smalldiv{
+            background-color: pink;
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+            
+        
+    </style>
+</head>
+    
+    
+<body>
+
+  <div id="firstdiv">This is my first div</div>
+    <div id="container2">
+        <div id="container">
+            <div id="seconddiv">This is my second div</div>
+        </div>
+  </div>
+  <div id="thirddiv">This is my third div</div>
+    <div id="smalldiv">This is a fixed div
+    </div>
+    
+</body>
+
+</html>
+
+

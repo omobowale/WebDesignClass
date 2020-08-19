@@ -1,0 +1,100 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Our First Project</title>
+    <style>
+        .grid-container{
+            background-color: white;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 30% 40% auto;
+            grid-template-rows: 10% auto 10%;
+        }
+        
+        .header, .menu, .main, .right, .footer{
+            border: 2px solid blue;
+            text-align: center;
+        }
+        
+        .header{
+            background-color: lightblue;
+            grid-column: 1 / 4;
+        }
+        
+        .menu {
+            
+            background-color: lightblue;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            display:grid;
+            align-items: center;
+          
+            
+        }
+        
+        .main {
+            background-color: lightblue;
+            grid-column: 2 / 3;
+           
+        }
+        
+        .right{
+            
+            background-color: lightblue;
+            grid-column: 3 / 4;
+             
+        }
+        .footer {
+            
+            background-color: lightblue;
+            grid-column: 2 / 4;
+        } 
+        
+        #myspan {
+            cursor:grab;
+            width: 40%;
+            height: 40px;
+            background-color: red;
+            transition: background-color 3s, height 1s, font-size 2s, width 1s, margin-left 1s; 
+        }
+        
+        #myspan:hover {
+            background-color: green;
+            height: 20px;
+            font-size: 40px;
+            width: 60%;
+            margin-left: 40px;
+        }
+        
+    </style>
+</head>
+    
+    
+<body>
+    
+   <div class="grid-container">
+        <div class="header">
+            Header
+       </div>
+        <div class="menu">
+            <span id="myspan">Menu</span>
+       </div>
+        <div class="main">
+            Main
+       </div>
+       <div class="right">
+            Right
+       </div>
+        <div class="footer">
+            Footer
+       </div>
+      
+    </div>
+   
+</body>
+
+</html>
+
+

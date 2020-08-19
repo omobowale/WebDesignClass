@@ -1,0 +1,25 @@
+<! doctype html>
+
+
+<html>
+
+<head><title>Using Form (1)</title></head>
+    
+<body>
+    
+    <form action="paragraph.html">
+        <label>First name:</label> <br/>
+        <input type="text" value="Omobowale" /><br/><br>
+        
+        <label>Last name: </label> <br>
+        <input type="text" value="Otuyiga" /> <br><br>
+        
+        <!--  -->
+        <!-- <input type="button" value="submit" /> -->
+        <button type="submit"> Submit </button>
+        
+    </form>
+
+</body>
+
+</html>

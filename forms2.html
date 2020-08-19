@@ -1,0 +1,93 @@
+<! doctype html>
+
+
+<html>
+
+<head>
+    <title>Using functions</title>
+</head>
+    
+<body>
+    
+    
+    
+    
+    <script>
+       
+        //function has two parts
+        //1. declaration: specify what the function will do
+        //2. invoking: asking the function to perform its task
+        
+        //a function can call another function
+        function another(name){
+            document.write("This is from me <br>");
+            callme(name);
+        }
+        
+        function callme(myname){
+            document.write(myname);
+        }
+        
+        //another("John Peters");
+        
+        //functions may or may not return a value
+        function areaofrectangle(l, b){
+            var area = l * b;
+            return area;
+        }
+        
+        var x = 2 * areaofrectangle(4,6);
+        
+        //document.write(x);
+        
+        //create a simple function that receives two parameters: firstname and lastname
+        //it prints out the full name: firstname and lastname
+        function displayAndReturn(text){
+            document.write(text);
+            return text;
+        }
+        
+        //var m = displayAndReturn("This is my own text");
+        
+        //modulus(%) of any number with 2 = 0 //even
+        //x % 2 == 0  //x is even
+        //x % 3 == 0 
+        function isEven(num){
+            if(num % 2 == 0){
+                return true;
+            }
+            
+            return false;
+         
+        }
+        
+        console.log(isEven(519));
+        
+        var passwords = ["1223", "ioidsfsf", "hajsdfy", "letmein", "typoe"];
+        
+        //check if a password is in our password array
+        function isIn(pw, arr){
+            for(i=0; i<arr.length; i++){
+              if(pw == arr[i]){
+                  return true;
+              }
+            
+            }
+            
+           return false;
+            
+        }
+        
+        alert(isIn("sdfgsfd", passwords));
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+</body>
+
+</html>

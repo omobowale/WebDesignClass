@@ -1,0 +1,52 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Learning Arrays</title>
+  
+    
+    
+    
+</head>
+    
+    
+<body>
+    
+   <textarea rows="6" cols="40" id="mytext"></textarea>
+    <button id="showbutton">Show Quote</button>
+    
+    
+   <script>
+       
+      
+   
+    var quotes = ["Eat well and live long", "Laughter is the best medicine", "Roses are red", "Health is wealth", "The sky is the limit", "What an elder can see sitting, a child cannot see it standing", "A stitch in time saves nine", "Live like everyday is the last", "Not all that glitters is gold", "You only live once"];
+       
+    
+    setInterval(function(){
+        //generate a random number //
+        var x = Math.floor(Math.random() * quotes.length); // 0-9
+        
+        document.getElementById("mytext").value = quotes[x];
+        
+    }, 5000);   
+       
+       
+       
+    document.getElementById("showbutton").onclick = function(){
+       
+        
+    }
+    
+    
+    
+       
+    </script>
+</body>
+
+    
+    
+</html>
+
+

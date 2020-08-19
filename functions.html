@@ -1,0 +1,88 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Functions</title>
+  
+    
+    
+    
+</head>
+    
+    
+<body>
+    
+    <div>
+        <p>Result: <span id="result">0</span></p>
+        <input id="fnumber" type="number" placeholder="Please enter the first number"/>
+        <input id="snumber" type="number" placeholder="Please enter the second number"/>
+        <button id="addbutton">Add</button>
+    </div>
+    
+    
+  
+   
+    
+    <script>
+        
+        
+       
+        function greetPerson (name){
+            document.write("Hello " + name);
+        }
+        
+        function square(num){
+            var s = num * num;
+            return s;
+        }
+        
+       // var x = square(10);   // x = 100
+       // 
+        
+        document.getElementById("addbutton").onclick = function(){
+            //get the numbers
+            var num1 = document.getElementById("fnumber").value;
+            var num2 = document.getElementById("snumber").value;
+            
+            //parseInt("30")    - String to an integer
+            //parseDouble("56.90") - String to a double
+            
+            //convert them to numbers
+            var a = parseInt(num1);
+            var b = parseInt(num2);
+            
+            
+            var y = addTwo(a, b);
+            document.getElementById("result").innerText = y;
+            
+            
+        }
+        
+         function addTwo(fnum, snum){
+            var sum = fnum + snum;
+            return sum;
+        }
+        
+        
+        
+        //Declaration - defining the function: what it does
+        //Invocation(Calling) - do it
+        
+        //parameters (arguments) - things needed for the function to work
+        
+        //A function can call another function
+        //A function cannot exactly be declared in another function
+        //A function can be called as many times as required
+        //Functions are also called methods
+        //Functions may or may not return a value
+                                                                                                                                                                               
+    </script>
+    
+</body>
+
+    
+    
+</html>
+
+

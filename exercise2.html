@@ -1,0 +1,55 @@
+<! doctype html>
+
+<html>
+
+<head>
+    <title>Positioning Exercise</title>
+    <style>
+        #parent {
+            background-color: aqua;
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            position: relative;
+        }
+        #child{
+            background: none;
+            width: 100%;
+            height: 90px;
+            position: absolute;
+            top:350px;
+           
+        }
+        
+        button{
+            width: 45%;
+            height:100%;
+        }
+        
+        #resetbutton{
+            position:absolute;
+            left: 385px;
+        }
+        
+        
+    </style>
+</head>
+    
+    
+<body>
+
+    <div id="parent">
+        <div id="child">
+            <button>Submit</button>
+            <button id="resetbutton">Reset</button>
+        </div>
+    </div>
+    
+    
+  
+    
+</body>
+
+</html>
+
+
